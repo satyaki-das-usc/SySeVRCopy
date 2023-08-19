@@ -45,7 +45,7 @@ def getCtrlRealtionOfCFG(cfg):
             else:
                 res = result.group()
             if res == '':
-                print "error!"
+                print("error!")
                 exit()
 
             elif res == 'if':
@@ -228,7 +228,7 @@ def getCtrlRealtionOfCFG(cfg):
 
                 else:
                     list_real_false_stmt = [false_stmt_start]
-                    print "false_stmt_start", false_stmt_start['name']
+                    print("false_stmt_start", false_stmt_start['name'])
 
             else:
                 list_real_false_stmt = []
@@ -319,10 +319,10 @@ def main():
         pickle.dump(_dict_node2ifstmt, fout, True)
         fout.close()
 
-        print node.properties['name']
-        print _dict
-        print _dict_node2ifstmt
-        print ''
+        print(node.properties['name'])
+        print(_dict)
+        print(_dict_node2ifstmt)
+        print('')
 
 
 if __name__ == '__main__':
