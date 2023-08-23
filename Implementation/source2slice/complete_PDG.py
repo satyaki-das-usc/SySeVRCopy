@@ -173,7 +173,7 @@ def getInitNodeOfDecl(pdg, list_sorted_pdgnode, node, var, dict_use, dict_def):
                     list_init_node.append((list_sorted_pdgnode[i], i))#is init node and dataedge not exists
 
         elif list_sorted_pdgnode[i]['type'] != 'IdentifierDeclStatement' and list_sorted_pdgnode[i]['name'] not in dict_def.keys():
-            print list_sorted_pdgnode[i]['name']
+            print(list_sorted_pdgnode[i]['name'])
             if list_sorted_pdgnode[i]['name'] in dict_use.keys() and var in dict_use[list_sorted_pdgnode[i]['name']]:
                 #print '2'
                 if isEdgeExists(pdg, node['name'], list_sorted_pdgnode[i]['name'], var):
@@ -242,7 +242,7 @@ def get_nodes_before_exit(pdg, dict_if2cfgnode, dict_cfgnode2if):
             else:
                 if_name = get_ifname(key, dict_if2cfgnode, dict_cfgnode2if)
 
-            print "key", key, if_name, dict_cfgnode2if[key]
+            print("key", key, if_name, dict_cfgnode2if[key])
 
             _list_name_0 = dict_if2cfgnode[if_name][0]
             _list_name_1 = dict_if2cfgnode[if_name][1]
@@ -485,7 +485,7 @@ def main():
                 fin.close()
 
             else:
-                print cfg_path
+                print(cfg_path)
                 fin = open(os.path.join(cfg_path, _file))
                 cfg = pickle.load(fin)
                 fin.close()
@@ -517,7 +517,7 @@ def main():
 
         if not os.path.exists(path):
             os.mkdir(path)
-        print store_path, path    
+        print(store_path, path)
         f = open(store_path, 'wb')
         pickle.dump(opted_pdg_5, f, True)
         f.close()

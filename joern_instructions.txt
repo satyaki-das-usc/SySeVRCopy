@@ -1,0 +1,5 @@
+Download the fixed version of joern supporting neo4j graph DB output with fixed dependencies and gradle updates from the link below:
+https://drive.google.com/file/d/1jj0POvfsfTuTAJECxjLZ1r7pDoD0y-4w/view?usp=sharing
+
+Download the neo4j graph DB for the NVD and SARD dataset from the link below:
+https://drive.google.com/file/d/1xdcpP1V-RI4_gBYVmg8bqnlrSat1KUAV/view?usp=sharing
