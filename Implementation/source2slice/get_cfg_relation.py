@@ -24,7 +24,6 @@ def getSubCFGGraph(startNode, list_node, not_scan_list):
 
     return list_node, not_scan_list
 
-print
 def getCtrlRealtionOfCFG(cfg):
 
     list_ifstmt_nodes = []

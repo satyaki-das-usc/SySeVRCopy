@@ -1,4 +1,6 @@
-conda create -n "sysevr" python=3.10 ipython
+conda remove --name sysevr --all
+conda create -n "sysevr" python=3.6 ipython
+conda activate sysevr
 
 pip install git+https://github.com/fabsx00/python-joern.git
 pip install https://github.com/nigelsmall/py2neo/archive/refs/tags/release/2.0.zip
