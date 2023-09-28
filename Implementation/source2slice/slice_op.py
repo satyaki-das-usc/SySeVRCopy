@@ -346,6 +346,9 @@ def process_crossfuncs_back_byfirstnode(list_tuple_results_back, testID, i, not_
 
 
                     path = os.path.join('dict_call2cfgNodeID_funcID', testID, 'dict.pkl')#get funname and it call place
+                    if not os.path.exists(path):
+                        i += 1
+                        continue
                     fin = open(path, 'rb')
                     _dict = pickle.load(fin)
                     fin.close()
