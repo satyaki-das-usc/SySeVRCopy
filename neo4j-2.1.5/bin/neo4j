@@ -260,7 +260,7 @@ startit() {
   fi
 }
 
-console() {
+  {
 
   checkstatus
   checklimits

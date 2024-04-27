@@ -1,6 +1,7 @@
 #!/bin/bash
 
 source /etc/environment
+ulimit -n 40000
 neo4j-2.1.5/bin/neo4j console
 neo4j-2.1.5/bin/neo4j restart
 neo4j-2.1.5/bin/neo4j stop

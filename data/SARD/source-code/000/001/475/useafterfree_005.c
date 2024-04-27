@@ -1,5 +1,5 @@
 /* 
-© 2000-2005 Klocwork Inc.  All rights reserved. 
+ï¿½ 2000-2005 Klocwork Inc.  All rights reserved. 
 Permission is hereby granted, to use, copy, modify, and distribute this software 
 and its documentation for any purpose, provided that the above copyright notice 
 and the following three  paragraphs appear in all copies of this software: 
@@ -15,7 +15,7 @@ and the following three  paragraphs appear in all copies of this software:
 
 Restricted Rights. The Software (a) was developed at private expense, is existing 
 computer software and no part of it was developed with government funds, 
-(b) is “restricted computer software” licensed in accordance with restricted rights 
+(b) is ï¿½restricted computer softwareï¿½ licensed in accordance with restricted rights 
 provisions of subparagraphs (a) through (d) of the Commercial Computer Software-Restricted 
 Rights clause FAR 52.227-19 and its successors, and 
 (c) is unpublished and all rights are reserved under the copyrights laws of the 
@@ -30,4 +30,3 @@ void use_after_free(struct S *p) {
   free(p);
   free(p->field); 
 }
-
